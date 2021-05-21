@@ -2442,7 +2442,7 @@
 						(send ?menuSinLactosa imprimir-plato Primero)
 						(bind ?alternativaSinLactosa TRUE)
 				  )
-			  )
+			;;)
 		  )
 	)
 
@@ -2505,7 +2505,6 @@
 											(if (or (eq ?tipoIngrediente Marisco) (eq ?tipoIngrediente Pescado))
 												then (bind ?tipoVino Blanco)
 													else (bind ?tipoVino Tinto)
-												)
 											)
 
 								)
@@ -2537,7 +2536,6 @@
 											(if (or (eq ?tipoIngrediente Marisco) (eq ?tipoIngrediente Pescado))
 												then (bind ?tipoVino Blanco)
 													else (bind ?tipoVino Tinto)
-												)
 											)
 
 								)
@@ -2550,8 +2548,8 @@
 						)
 						(bind ?alternativaSinLactosa TRUE)
 
-				  )
-			  )
+				  ;;)
+			  ;;)
 			  ;;)
 		  )
 	)
