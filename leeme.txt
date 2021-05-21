@@ -1,0 +1,7 @@
+El prototip actual no funciona correctament encara. Hem estat treballant en ell,
+però ens hem trobat amb problemes inesperats que han retrassat l'avanç en el projecte.
+
+Dit això incloem en el zip, a banda del .clp, els fitxers generats pel protégé, els quals
+si que creiem es troben en un estat pràcticament final en el que es refereix a les
+classes creades i la relació entre aquestes. També algunes de les instàncies que
+tenim previst utilitzar com els plats o els ingredients.

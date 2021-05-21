@@ -1,0 +1,49 @@
+digraph SBCProject {
+	node [label="\N"];
+	graph [bb="0,0,1852,780"];
+	Cliente [label="{Cliente|{Recomendaciones|Instance*|{Menu}}|{DNI|String}|{Eventos|Instance*|{Evento}}|{NombreCliente|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="845,720", rects="727,756,964,780 727,732,845,756 845,732,914,756 914,732,964,756 727,708,841,732 841,708,964,732 727,684,805,708 805,684,890,708 \
+890,684,964,708 727,660,871,684 871,660,964,684", width="3.28", height="1.67"];
+	Menu [label="{Menu|{Platos|Instance*|{Plato}}|{TipoMenú|Instance|{Tipo}}|{EventosM|Instance*|{Evento}}|{Bebidas|Instance*|{Bebida}}|{Ingredi\
+entesProhibidos|Instance*|{Ingrediente}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="505,536", rects="359,584,651,608 359,560,452,584 452,560,563,584 563,560,651,584 359,536,470,560 470,536,571,560 571,536,651,560 359,512,464,536 \
+464,512,563,536 563,512,651,536 359,488,455,512 455,488,559,512 559,488,651,512 359,464,503,488 503,464,572,488 572,464,651,488", width="4.06", height="2.00"];
+	Evento [label="{Evento|{TemporadaE|Instance|{Temporada}}|{NombreEvento|String}|{Clientes|Instance*|{Cliente}}|{MenusE|Instance*|{Menu}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="824,304", rects="710,340,939,364 710,316,797,340 797,316,860,340 860,316,939,340 710,292,850,316 850,292,939,316 710,268,786,292 786,268,869,292 \
+869,268,939,292 710,244,789,268 789,244,873,268 873,244,939,268", width="3.17", height="1.67"];
+	Precio [label=Precio, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="928,72", width="0.75", height="0.50"];
+	Restricciones [label=Restricciones, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1414,536", width="1.28", height="0.50"];
+	RestriccionMenu [label="{RestriccionMenu|{TipoR|Instance*|{Tipo}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1037,304", rects="956,304,1118,328 956,280,1007,304 1007,280,1076,304 1076,280,1118,304", width="2.25", height="0.67"];
+	Tipo [label="{Tipo|{TipoMP|Symbol*|{No-específico|Vegano|Vegetariano|...}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="347,72", rects="236,108,458,132 236,12,298,108 298,12,363,108 363,84,458,108 363,60,458,84 363,36,458,60 363,12,458,36", width="3.08", height="1.67"];
+	RestriccionPrecio [label="{RestriccionPrecio|{PrecioR|Instance|{Precio}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1543,304", rects="1454,304,1632,328 1454,280,1516,304 1516,280,1579,304 1579,280,1632,304", width="2.47", height="0.67"];
+	Temporada [label="{Temporada|{Temp|Symbol|{Otoño|Primavera|Verano|...}}|{FechaF|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1395,72", rects="1305,120,1486,144 1305,24,1353,120 1353,24,1412,120 1412,96,1486,120 1412,72,1486,96 1412,48,1486,72 1412,24,1486,48 1305,0,1399\
+,24 1399,0,1486,24", width="2.50", height="2.00"];
+	Plato [label="{Plato|{TipoPlato|Instance|{Tipo}}|{Ingredientes|Instance*|{Ingrediente}}|{BebidaIngrediente|Instance*|{Bebida}}|{OrdenPlato|Sym\
+bol*|{Primero|Segundo|Postre}}|{Menus|Instance*|{Menu}}|{...}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="253,304", rects="131,388,376,412 131,364,224,388 224,364,310,388 310,364,376,388 131,340,220,364 220,340,293,364 293,340,376,364 131,316,250,340 \
+250,316,319,340 319,316,376,340 131,244,222,316 222,244,299,316 299,292,376,316 299,268,376,292 299,244,376,268 131,220,209,244 \
+209,220,302,244 302,220,376,244 131,196,376,220", width="3.39", height="3.00"];
+	Bebida [label="{Bebida|{NombreBebida|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="81,72", rects="5,72,157,96 5,48,107,72 107,48,157,72", width="2.11", height="0.67"];
+	Ingrediente [label="{Ingrediente|{NombreIngrediente|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="563,72", rects="476,72,651,96 476,48,601,72 601,48,651,72", width="2.42", height="0.67"];
+	RestriccionFecha [label="{RestriccionFecha|{FechaR|Instance|{Temporada}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1751,304", rects="1650,304,1852,328 1650,280,1710,304 1710,280,1773,304 1773,280,1852,304", width="2.81", height="0.67"];
+	RestriccionIngredientes [label="{RestriccionIngredientes|{IngredientesProhibidosR|Instance*|{Ingrediente}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1286,304", rects="1136,304,1437,328 1136,280,1289,304 1289,280,1358,304 1358,280,1437,304", width="4.17", height="0.67"];
+	Cliente -> Menu [style=filled, label="Recomendaciones*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,639,608 734,660 707,645 676,628 648,613", lp="748,634"];
+	Cliente -> Evento [style=filled, label="Eventos*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,827,364 842,660 838,584 832,454 828,374", lp="864,536"];
+	Menu -> Precio [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,606,464 613,457 626,443 639,428 648,412 695,327 619,268 685,196 704,174 721,189 748,178 806,153 868,113 902,90", lp="693,304"];
+	Restricciones -> RestriccionMenu [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,1368,523 1358,520 1297,501 1198,465 1127,412 1095,388 1068,352 1052,328", lp="1183,438"];
+	RestriccionMenu -> Tipo [style=filled, label="TipoR*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,434,132 1025,280 1010,254 983,214 947,196 865,155 627,199 539,178 506,170 473,154 443,137", lp="893,170"];
+	Restricciones -> RestriccionPrecio [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,1424,518 1429,509 1454,463 1506,372 1530,328", lp="1478,438"];
+	RestriccionPrecio -> Precio [style=filled, label=PrecioR, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,955,76 1527,280 1510,255 1480,217 1445,196 1362,146 1069,95 965,78", lp="1427,170"];
+	Evento -> Temporada [style=filled, label=TemporadaE, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,1305,84 881,244 900,226 923,208 947,196 1058,135 1201,102 1295,86", lp="1049,170"];
+	Evento -> Cliente [style=filled, label="Clientes*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,877,660 858,364 872,393 887,429 895,464 908,526 908,545 895,608 892,622 887,636 881,650", lp="930,536"];
+	Evento -> Menu [style=filled, label="MenusE*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,651,504 806,364 795,392 778,424 754,446 727,470 694,487 661,500", lp="791,438"];
+	Menu -> Plato [style=filled, label="Platos*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,324,412 377,464 369,458 362,452 355,446 346,438 338,429 330,420", lp="376,438"];
+	Menu -> Tipo [style=filled, label=TipoMenú, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,385,132 457,464 447,447 439,429 433,412 397,305 433,268 397,162 395,155 392,148 389,141", lp="465,304"];
+	Menu -> Evento [style=filled, label="EventosM*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,757,364 639,464 648,458 657,452 666,446 671,442 711,406 749,371", lp="714,438"];
+	Menu -> Bebida [style=filled, label="Bebidas*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,71,96 359,514 246,493 105,459 69,412 0,320 42,171 67,105", lp="99,304"];
+	Menu -> Ingrediente [style=filled, label="IngredientesProhibidos*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,547,96 499,464 494,387 493,264 519,162 523,142 533,122 542,105", lp="576,304"];
+	Restricciones -> RestriccionFecha [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,1454,518 1463,514 1511,491 1584,454 1641,412 1675,387 1709,351 1730,328", lp="1619,438"];
+	RestriccionFecha -> Temporada [style=filled, label=FechaR, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,1486,109 1730,280 1709,256 1675,220 1641,196 1596,163 1541,135 1495,113", lp="1637,170"];
+	Restricciones -> RestriccionIngredientes [label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", dir=back, pos="s,1404,518 1399,509 1374,463 1323,372 1299,328", lp="1372,438"];
+	RestriccionIngredientes -> Ingrediente [style=filled, label="IngredientesProhibidosR*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,610,96 1260,280 1230,254 1179,214 1127,196 1002,153 959,206 831,178 755,161 672,125 619,100", lp="1125,170"];
+	Plato -> Tipo [style=filled, label=TipoPlato, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,264,132 236,196 237,184 240,173 245,162 249,154 253,147 258,140", lp="272,170"];
+	Plato -> Ingrediente [style=filled, label="Ingredientes*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,535,96 367,196 383,183 399,172 416,162 437,149 446,155 467,144 488,132 510,116 527,103", lp="453,170"];
+	Plato -> Bebida [style=filled, label="BebidaIngrediente*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,89,96 140,196 136,190 131,184 127,178 112,155 101,128 92,106", lp="182,170"];
+	Plato -> Menu [style=filled, label="Menus*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,359,494 272,412 278,424 284,436 293,446 309,464 329,478 350,489", lp="316,438"];
+}

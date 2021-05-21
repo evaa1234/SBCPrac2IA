@@ -1,0 +1,1071 @@
+; Thu May 20 10:35:19 CEST 2021
+; 
+;+ (version "3.5")
+;+ (build "Build 660")
+
+([PracticaSBC_Class29] of  Cliente
+
+	(DNI "48046516R")
+	(NombreCliente "Marc"))
+
+([SBCProject_Class0] of  Cliente
+
+	(DNI "48623189T")
+	(NombreCliente "Guillem"))
+
+([SBCProject_Class1] of  Cliente
+
+	(DNI "73333189G")
+	(NombreCliente "Eva"))
+
+([SBCProject_Class10] of  Bebida
+
+	(NombreBebida "Vino Tinto 3")
+	(PrecioR 15.0))
+
+([SBCProject_Class100] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class41]
+		[SBCProject_Class40]
+		[SBCProject_Class23]
+		[SBCProject_Class37])
+	(NombrePlato "Ensalada")
+	(OrdenPlato Primero)
+	(PrecioR 5.5)
+	(TipoPlato Vegano Vegetariano No-complejo))
+
+([SBCProject_Class10000] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class55]
+		[SBCProject_Class25]
+		[SBCProject_Class74]
+		[SBCProject_Class22]
+		[SBCProject_Class42]
+		[SBCProject_Class44]
+		[SBCProject_Class76]
+		[SBCProject_Class43])
+	(NombrePlato "Tapas Variadas")
+	(OrdenPlato Primero)
+	(PrecioR 7.5)
+	(TipoPlato No-complejo))
+
+([SBCProject_Class10001] of  Tipo
+
+	(TipoMP Familiar No-complejo))
+
+([SBCProject_Class10002] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class25]
+		[SBCProject_Class51]
+		[SBCProject_Class49]
+		[SBCProject_Class28]
+		[SBCProject_Class23]
+		[SBCProject_Class37]
+		[SBCProject_Class50])
+	(NombrePlato "Olla Aranesa")
+	(OrdenPlato Primero)
+	(PrecioR 10.5)
+	(TipoPlato Familiar Regional))
+
+([SBCProject_Class10003] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10005] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class36]
+		[SBCProject_Class65]
+		[SBCProject_Class41]
+		[SBCProject_Class28]
+		[SBCProject_Class23]
+		[SBCProject_Class37])
+	(NombrePlato "Paella")
+	(OrdenPlato Segundo)
+	(PrecioR 11.5)
+	(TipoPlato Familiar Regional Clasico))
+
+([SBCProject_Class10006] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10007] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class52]
+		[SBCProject_Class37])
+	(NombrePlato "Codillo a la Brasa")
+	(OrdenPlato Segundo)
+	(PrecioR 20.0)
+	(TipoPlato Regional Clasico Sibarita))
+
+([SBCProject_Class10008] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico Regional))
+
+([SBCProject_Class10009] of  Plato
+
+	(Ingredientes [SBCProject_Class48])
+	(NombrePlato "Helado artesanal")
+	(OrdenPlato Postre)
+	(PrecioR 6.0)
+	(TipoPlato Vegetariano Familiar Clasico Regional Sibarita))
+
+([SBCProject_Class10010] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10011] of  Plato
+
+	(Ingredientes [SBCProject_Class54])
+	(NombrePlato "Crema catalana")
+	(OrdenPlato Postre)
+	(PrecioR 3.0)
+	(TipoPlato Vegetariano Familiar Regional Clasico))
+
+([SBCProject_Class10012] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10013] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class57]
+		[SBCProject_Class23]
+		[SBCProject_Class37])
+	(NombrePlato "Esqueixada")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 7.5)
+	(TipoPlato Regional Clasico))
+
+([SBCProject_Class10014] of  Tipo
+
+	(TipoMP Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10015] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class45]
+		[SBCProject_Class59]
+		[SBCProject_Class60])
+	(NombrePlato "Canelones")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 8.0)
+	(TipoPlato Familiar Regional Clasico))
+
+([SBCProject_Class10016] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico Regional))
+
+([SBCProject_Class10018] of  Plato
+
+	(Ingredientes [SBCProject_Class22])
+	(NombrePlato "Bocadillos variados")
+	(OrdenPlato Segundo)
+	(PrecioR 4.0)
+	(TipoPlato No-complejo Vegano Vegetariano Familiar))
+
+([SBCProject_Class10019] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar No-complejo))
+
+([SBCProject_Class10020] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class36]
+		[SBCProject_Class65]
+		[SBCProject_Class58]
+		[SBCProject_Class37])
+	(NombrePlato "Arroz negro")
+	(OrdenPlato Segundo)
+	(PrecioR 10.0)
+	(TipoPlato Familiar No-complejo Clasico))
+
+([SBCProject_Class10021] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10022] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class61]
+		[SBCProject_Class37])
+	(NombrePlato "Secreto ibérico")
+	(OrdenPlato Segundo)
+	(PrecioR 22.0)
+	(TipoPlato Clasico Sibarita))
+
+([SBCProject_Class10023] of  Tipo
+
+	(TipoMP Cl%C3%A1sico Regional))
+
+([SBCProject_Class10024] of  Plato
+
+	(Ingredientes [SBCProject_Class56])
+	(NombrePlato "Helado de tarrina")
+	(OrdenPlato Postre)
+	(PrecioR 3.0)
+	(TipoPlato Vegetariano Familiar No-complejo))
+
+([SBCProject_Class10025] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico No-complejo))
+
+([SBCProject_Class10026] of  Plato
+
+	(Ingredientes [SBCProject_Class47])
+	(NombrePlato "Tiramisu")
+	(OrdenPlato Postre)
+	(PrecioR 4.0)
+	(TipoPlato Vegetariano No-complejo Clasico))
+
+([SBCProject_Class10027] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico No-complejo Sibarita))
+
+([SBCProject_Class10028] of  Plato
+
+	(Ingredientes [SBCProject_Class35])
+	(NombrePlato "Coulant")
+	(OrdenPlato Postre)
+	(PrecioR 5.0)
+	(TipoPlato Vegetariano Clasico Sibarita))
+
+([SBCProject_Class10029] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico Sibarita))
+
+([SBCProject_Class10030] of  Plato
+
+	(Ingredientes [SBCProject_Class62])
+	(NombrePlato "Tarta de cafe")
+	(OrdenPlato Postre)
+	(PrecioR 5.0)
+	(TipoPlato Vegetariano No-complejo Clasico Sibarita))
+
+([SBCProject_Class10031] of  Tipo
+
+	(TipoMP Vegetariano Vegano Cl%C3%A1sico Sibarita))
+
+([SBCProject_Class10032] of  Plato
+
+	(Ingredientes [SBCProject_Class55])
+	(NombrePlato "Surtido de embutidos")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 17.0)
+	(TipoPlato No-complejo Regional Clasico Sibarita))
+
+([SBCProject_Class10033] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10034] of  Plato
+
+	(Ingredientes [SBCProject_Class10037])
+	(NombrePlato "Ostras")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 15.5)
+	(TipoPlato Sibarita))
+
+([SBCProject_Class10035] of  Tipo
+
+	(TipoMP No-complejo Cl%C3%A1sico Regional Sibarita))
+
+([SBCProject_Class10037] of  Ingrediente
+
+	(Marisco TRUE)
+	(NombreIngrediente "Ostras")
+	(Temp Otono))
+
+([SBCProject_Class10038] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class63]
+		[SBCProject_Class64])
+	(NombrePlato "Solomillo al Roquefort")
+	(OrdenPlato Segundo)
+	(PrecioR 25.0)
+	(TipoPlato Familiar Clasico Sibarita))
+
+([SBCProject_Class10039] of  Tipo
+)
+
+([SBCProject_Class10040] of  Tipo
+)
+
+([SBCProject_Class10041] of  Tipo
+)
+
+([SBCProject_Class10042] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico Sibarita))
+
+([SBCProject_Class10043] of  Plato
+
+	(Ingredientes [SBCProject_Class65])
+	(NombrePlato "Bogabante")
+	(OrdenPlato Segundo)
+	(PrecioR 15.0)
+	(TipoPlato Sibarita Clasico))
+
+([SBCProject_Class10044] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional Sibarita))
+
+([SBCProject_Class10045] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class25]
+		[SBCProject_Class22]
+		[SBCProject_Class23]
+		[SBCProject_Class37])
+	(NombrePlato "Tostadas con escalivada")
+	(OrdenPlato Primero)
+	(PrecioR 5.5)
+	(TipoPlato Vegano Vegetariano Familiar No-complejo Regional Clasico))
+
+([SBCProject_Class10046] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10047] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class55]
+		[SBCProject_Class22]
+		[SBCProject_Class23])
+	(NombrePlato "Pa amb tomaquet i embotit")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 7.0)
+	(TipoPlato Familiar Regional No-complejo Sibarita))
+
+([SBCProject_Class10048] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional Sibarita))
+
+([SBCProject_Class10049] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class51]
+		[SBCProject_Class28])
+	(NombrePlato "Botifarra negra con judias")
+	(OrdenPlato Segundo)
+	(PrecioR 7.0)
+	(TipoPlato Regional No-complejo Regional Clasico))
+
+([SBCProject_Class10050] of  Tipo
+)
+
+([SBCProject_Class10051] of  Tipo
+)
+
+([SBCProject_Class10052] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class10053] of  Plato
+
+	(Ingredientes [SBCProject_Class67])
+	(NombrePlato "Caracoles")
+	(OrdenPlato Segundo)
+	(PrecioR 10.0)
+	(TipoPlato Familiar No-complejo Regional))
+
+([SBCProject_Class10054] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Regional Sibarita))
+
+([SBCProject_Class101] of  Tipo
+
+	(TipoMP Vegano Vegetariano Cl%C3%A1sico Regional))
+
+([SBCProject_Class103] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class22]
+		[SBCProject_Class42]
+		[SBCProject_Class46]
+		[SBCProject_Class40]
+		[SBCProject_Class23])
+	(NombrePlato "Hamburguesa con patatas")
+	(OrdenPlato Segundo)
+	(PrecioR 7.5)
+	(TipoPlato Familiar No-complejo))
+
+([SBCProject_Class104] of  Tipo
+)
+
+([SBCProject_Class105] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo))
+
+([SBCProject_Class11] of  Bebida
+
+	(NombreBebida "Margarita")
+	(PrecioR 5.0))
+
+([SBCProject_Class12] of  Bebida
+
+	(NombreBebida "Cafe")
+	(PrecioR 1.5))
+
+([SBCProject_Class13] of  Bebida
+
+	(NombreBebida "Te")
+	(PrecioR 2.0))
+
+([SBCProject_Class14] of  Evento
+
+	(Clientes [PracticaSBC_Class29])
+	(NombreEvento "Boda del Marc")
+	(TemporadaE [SBCProject_Class15]))
+
+([SBCProject_Class15] of  Temporada
+
+	(FechaF "15 Octubre")
+	(Temp Oto%C3%B1o))
+
+([SBCProject_Class17] of  Evento
+
+	(Clientes [SBCProject_Class0])
+	(NombreEvento "Bautizo Guillem")
+	(TemporadaE [SBCProject_Class18]))
+
+([SBCProject_Class18] of  Temporada
+
+	(FechaF "8 mayo")
+	(Temp Primavera))
+
+([SBCProject_Class19] of  Evento
+
+	(Clientes [PracticaSBC_Class29])
+	(NombreEvento "Despedida Soltero Eva")
+	(TemporadaE [SBCProject_Class20]))
+
+([SBCProject_Class2] of  Bebida
+
+	(NombreBebida "Agua 33cl")
+	(PrecioR 1.0))
+
+([SBCProject_Class20] of  Temporada
+
+	(FechaF "12 junio")
+	(Temp Primavera))
+
+([SBCProject_Class20000] of  Plato
+
+	(Ingredientes [SBCProject_Class69])
+	(NombrePlato "Fricando")
+	(OrdenPlato Segundo)
+	(PrecioR 10.5)
+	(TipoPlato Familiar Regional Clasico))
+
+([SBCProject_Class20001] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico Regional))
+
+([SBCProject_Class20002] of  Plato
+
+	(Ingredientes [SBCProject_Class66])
+	(NombrePlato "Brazo de gitano")
+	(OrdenPlato Postre)
+	(PrecioR 6.5)
+	(TipoPlato Regional Vegetariano Clasico))
+
+([SBCProject_Class20003] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico No-complejo))
+
+([SBCProject_Class20004] of  Plato
+
+	(Ingredientes [SBCProject_Class68])
+	(NombrePlato "Bunuelos")
+	(OrdenPlato Postre)
+	(PrecioR 4.0)
+	(TipoPlato Regional Vegetariano Familiar Clasico))
+
+([SBCProject_Class20005] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico Regional Sibarita))
+
+([SBCProject_Class20006] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class71]
+		[SBCProject_Class21])
+	(NombrePlato "Hummus con crudites")
+	(OrdenPlato Primero)
+	(PrecioR 9.0)
+	(TipoPlato Vegano Vegetariano Sibarita))
+
+([SBCProject_Class20007] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar No-complejo Sibarita))
+
+([SBCProject_Class20008] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class73]
+		[SBCProject_Class22])
+	(NombrePlato "Empanada de calabaza")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 10.0)
+	(TipoPlato Vegano Vegetariano Familiar Sibarita))
+
+([SBCProject_Class20009] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar Sibarita))
+
+([SBCProject_Class20010] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class22]
+		[SBCProject_Class76]
+		[SBCProject_Class75])
+	(NombrePlato "Canapes variados")
+	(OrdenPlato Primero)
+	(PrecioR 8.0)
+	(TipoPlato Sibarita Vegano Vegetariano Clasico))
+
+([SBCProject_Class20011] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico No-complejo Sibarita))
+
+([SBCProject_Class20012] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class25]
+		[SBCProject_Class38]
+		[SBCProject_Class36]
+		[SBCProject_Class77]
+		[SBCProject_Class76]
+		[SBCProject_Class75]
+		[SBCProject_Class37])
+	(NombrePlato "Sushi")
+	(OrdenPlato Segundo)
+	(PrecioR 18.5)
+	(TipoPlato Sibarita))
+
+([SBCProject_Class20013] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class72]
+		[SBCProject_Class23]
+		[SBCProject_Class37])
+	(NombrePlato "Gazpacho")
+	(OrdenPlato Primero)
+	(PrecioR 5.5)
+	(TipoPlato Vegano Vegetariano No-complejo Regional Clasico))
+
+([SBCProject_Class20014] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar Cl%C3%A1sico No-complejo Regional Sibarita))
+
+([SBCProject_Class20015] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class41]
+		[SBCProject_Class74]
+		[SBCProject_Class42]
+		[SBCProject_Class76]
+		[SBCProject_Class37])
+	(NombrePlato "Degustacion de tortillas")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 12.0)
+	(TipoPlato Vegetariano Sibarita))
+
+([SBCProject_Class20016] of  Tipo
+
+	(TipoMP Vegetariano Familiar Cl%C3%A1sico Regional Sibarita))
+
+([SBCProject_Class20018] of  Tipo
+
+	(TipoMP Familiar Sibarita))
+
+([SBCProject_Class20019] of  Plato
+
+	(Ingredientes [SBCProject_Class39])
+	(NombrePlato "Tarta tatin")
+	(OrdenPlato Postre)
+	(PrecioR 8.0)
+	(TipoPlato Vegetariano No-complejo Sibarita))
+
+([SBCProject_Class20020] of  Tipo
+
+	(TipoMP Familiar Cl%C3%A1sico Sibarita))
+
+([SBCProject_Class21] of  Ingrediente
+
+	(NombreIngrediente "Garbanzos")
+	(Temp Otono))
+
+([SBCProject_Class22] of  Ingrediente
+
+	(NombreIngrediente "Pan")
+	(Temp Primavera))
+
+([SBCProject_Class23] of  Ingrediente
+
+	(NombreIngrediente "Tomate")
+	(Temp Otono))
+
+([SBCProject_Class24] of  Ingrediente
+
+	(NombreIngrediente "Nachos")
+	(Temp Primavera))
+
+([SBCProject_Class25] of  Ingrediente
+
+	(Fruta TRUE)
+	(NombreIngrediente "Aguacate")
+	(Temp Verano))
+
+([SBCProject_Class27] of  Ingrediente
+
+	(NombreIngrediente "Berenjena")
+	(Temp Invierno))
+
+([SBCProject_Class28] of  Ingrediente
+
+	(NombreIngrediente "Judias")
+	(Temp Invierno))
+
+([SBCProject_Class29] of  Ingrediente
+
+	(NombreIngrediente "Tacos")
+	(Temp Primavera))
+
+([SBCProject_Class3] of  Bebida
+
+	(NombreBebida "Refresco")
+	(PrecioR 2.5))
+
+([SBCProject_Class30] of  Ingrediente
+
+	(NombreIngrediente "Brownie")
+	(Temp Otono))
+
+([SBCProject_Class30000] of  Precio
+)
+
+([SBCProject_Class31] of  Ingrediente
+
+	(Fruta TRUE)
+	(NombreIngrediente "Naranja")
+	(Temp Invierno))
+
+([SBCProject_Class32] of  Ingrediente
+
+	(Fruta TRUE)
+	(NombreIngrediente "Fresas")
+	(Temp Primavera))
+
+([SBCProject_Class33] of  Ingrediente
+
+	(Fruta TRUE)
+	(NombreIngrediente "Melocoton")
+	(Temp Verano))
+
+([SBCProject_Class34] of  Ingrediente
+
+	(Fruta TRUE)
+	(NombreIngrediente "Pera")
+	(Temp Otono))
+
+([SBCProject_Class35] of  Ingrediente
+
+	(NombreIngrediente "Coulant")
+	(Temp Primavera))
+
+([SBCProject_Class36] of  Ingrediente
+
+	(NombreIngrediente "Arroz")
+	(Temp Verano))
+
+([SBCProject_Class37] of  Ingrediente
+
+	(NombreIngrediente "Verduras")
+	(Temp Primavera))
+
+([SBCProject_Class38] of  Ingrediente
+
+	(NombreIngrediente "Algas")
+	(Temp Primavera))
+
+([SBCProject_Class39] of  Ingrediente
+
+	(NombreIngrediente "Tatin")
+	(Temp Otono))
+
+([SBCProject_Class4] of  Bebida
+
+	(NombreBebida "Vino Blanco 1")
+	(PrecioR 5.0))
+
+([SBCProject_Class40] of  Ingrediente
+
+	(NombreIngrediente "Lechuga")
+	(Temp Primavera))
+
+([SBCProject_Class41] of  Ingrediente
+
+	(NombreIngrediente "Cebolla")
+	(Temp Primavera))
+
+([SBCProject_Class42] of  Ingrediente
+
+	(NombreIngrediente "Patatas")
+	(Temp Primavera))
+
+([SBCProject_Class43] of  Ingrediente
+
+	(NombreIngrediente "Salsa Brava")
+	(Temp Primavera))
+
+([SBCProject_Class44] of  Ingrediente
+
+	(NombreIngrediente "Pulpo")
+	(Pescado TRUE)
+	(Temp Primavera))
+
+([SBCProject_Class45] of  Ingrediente
+
+	(Lactosa TRUE)
+	(NombreIngrediente "Beixamel")
+	(Temp Invierno))
+
+([SBCProject_Class46] of  Ingrediente
+
+	(NombreIngrediente "Hamburguesas")
+	(Temp Primavera))
+
+([SBCProject_Class47] of  Ingrediente
+
+	(NombreIngrediente "Tiramisu")
+	(Temp Verano))
+
+([SBCProject_Class48] of  Ingrediente
+
+	(NombreIngrediente "Helado Artesanal")
+	(Temp Verano))
+
+([SBCProject_Class49] of  Ingrediente
+
+	(NombreIngrediente "Caldo")
+	(Temp Invierno))
+
+([SBCProject_Class5] of  Bebida
+
+	(NombreBebida "Vino Blanco 2")
+	(PrecioR 10.0))
+
+([SBCProject_Class50] of  Ingrediente
+
+	(NombreIngrediente "Zanahoria")
+	(Temp Verano))
+
+([SBCProject_Class51] of  Ingrediente
+
+	(NombreIngrediente "Butifarra")
+	(Temp Primavera))
+
+([SBCProject_Class52] of  Ingrediente
+
+	(NombreIngrediente "Codillo")
+	(Temp Invierno))
+
+([SBCProject_Class53] of  Ingrediente
+
+	(NombreIngrediente "Entrecot")
+	(Temp Verano))
+
+([SBCProject_Class54] of  Ingrediente
+
+	(Lactosa TRUE)
+	(NombreIngrediente "Crema Catalana")
+	(Temp Primavera))
+
+([SBCProject_Class55] of  Ingrediente
+
+	(NombreIngrediente "Embutidos")
+	(Temp Primavera))
+
+([SBCProject_Class56] of  Ingrediente
+
+	(Lactosa TRUE)
+	(NombreIngrediente "Helado Tarrina")
+	(Temp Verano))
+
+([SBCProject_Class57] of  Ingrediente
+
+	(NombreIngrediente "Bacalao")
+	(Pescado TRUE)
+	(Temp Invierno))
+
+([SBCProject_Class58] of  Ingrediente
+
+	(NombreIngrediente "Tinta Calamar")
+	(Temp Verano))
+
+([SBCProject_Class59] of  Ingrediente
+
+	(NombreIngrediente "Carne Picada")
+	(Temp Verano))
+
+([SBCProject_Class6] of  Bebida
+
+	(NombreBebida "Vino Blanco 3")
+	(PrecioR 15.0))
+
+([SBCProject_Class60] of  Ingrediente
+
+	(NombreIngrediente "Pasta de canelones")
+	(Temp Invierno))
+
+([SBCProject_Class61] of  Ingrediente
+
+	(NombreIngrediente "Secreto iberico")
+	(Temp Otono))
+
+([SBCProject_Class62] of  Ingrediente
+
+	(NombreIngrediente "Tarta de Cafe")
+	(Temp Verano))
+
+([SBCProject_Class63] of  Ingrediente
+
+	(NombreIngrediente "Salsa Roquefort")
+	(Temp Verano))
+
+([SBCProject_Class64] of  Ingrediente
+
+	(NombreIngrediente "Solomillo")
+	(Temp Verano))
+
+([SBCProject_Class65] of  Ingrediente
+
+	(Marisco TRUE)
+	(NombreIngrediente "Bogavante")
+	(Temp Otono))
+
+([SBCProject_Class66] of  Ingrediente
+
+	(Lactosa TRUE)
+	(NombreIngrediente "Brazo de Gitano")
+	(Temp Invierno))
+
+([SBCProject_Class67] of  Ingrediente
+
+	(NombreIngrediente "Caracoles")
+	(Temp Otono))
+
+([SBCProject_Class68] of  Ingrediente
+
+	(Lactosa TRUE)
+	(NombreIngrediente "Bunuelos")
+	(Temp Invierno))
+
+([SBCProject_Class69] of  Ingrediente
+
+	(NombreIngrediente "Ternera")
+	(Temp Verano))
+
+([SBCProject_Class7] of  Bebida
+
+	(NombreBebida "Agua 1L")
+	(PrecioR 2.0))
+
+([SBCProject_Class70] of  Ingrediente
+
+	(NombreIngrediente "Salsa de setas")
+	(Temp Verano))
+
+([SBCProject_Class71] of  Ingrediente
+
+	(NombreIngrediente "Crudites")
+	(Temp Verano))
+
+([SBCProject_Class72] of  Ingrediente
+
+	(NombreIngrediente "Gazpacho")
+	(Temp Verano))
+
+([SBCProject_Class73] of  Ingrediente
+
+	(NombreIngrediente "Calabaza")
+	(Temp Otono))
+
+([SBCProject_Class74] of  Ingrediente
+
+	(NombreIngrediente "Huevos")
+	(Temp Verano))
+
+([SBCProject_Class75] of  Ingrediente
+
+	(NombreIngrediente "Salmón")
+	(Pescado TRUE)
+	(Temp Verano))
+
+([SBCProject_Class76] of  Ingrediente
+
+	(NombreIngrediente "Quesos Variados")
+	(Temp Primavera))
+
+([SBCProject_Class77] of  Ingrediente
+
+	(NombreIngrediente "Atun")
+	(Pescado TRUE)
+	(Temp Primavera))
+
+([SBCProject_Class79] of  Tipo
+)
+
+([SBCProject_Class8] of  Bebida
+
+	(NombreBebida "Vino Tinto 1")
+	(PrecioR 5.0))
+
+([SBCProject_Class81] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class21]
+		[SBCProject_Class22])
+	(NombrePlato "Hummus con Tostadas")
+	(OrdenPlato Primero)
+	(PrecioR 7.0)
+	(TipoPlato Vegano Vegetariano))
+
+([SBCProject_Class82] of  Tipo
+
+	(TipoMP Vegano Vegetariano))
+
+([SBCProject_Class84] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class25]
+		[SBCProject_Class24])
+	(NombrePlato "Nachos con Guacamole")
+	(OrdenPlato Primero)
+	(PrecioR 7.0)
+	(TipoPlato Vegano Vegetariano Familiar No-complejo))
+
+([SBCProject_Class85] of  Tipo
+
+	(TipoMP Vegano Vegetariano No-complejo))
+
+([SBCProject_Class86] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class27]
+		[SBCProject_Class39])
+	(NombrePlato "Tatín de Berenjena")
+	(OrdenPlato Primero)
+	(PrecioR 7.5)
+	(TipoPlato Vegano Vegetariano Familiar No-complejo Sibarita))
+
+([SBCProject_Class87] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar Cl%C3%A1sico))
+
+([SBCProject_Class88] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class28]
+		[SBCProject_Class29]
+		[SBCProject_Class23]
+		[SBCProject_Class37])
+	(NombrePlato "Tacos de Judías")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 8.0)
+	(TipoPlato Vegano Vegetariano Familiar No-complejo))
+
+([SBCProject_Class89] of  Tipo
+
+	(TipoMP Vegano Vegetariano No-complejo Familiar))
+
+([SBCProject_Class9] of  Bebida
+
+	(NombreBebida "Vino Tinto 2")
+	(PrecioR 10.0))
+
+([SBCProject_Class90] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class21]
+		[SBCProject_Class40]
+		[SBCProject_Class22]
+		[SBCProject_Class23]
+		[SBCProject_Class37])
+	(NombrePlato "Hamburguesa Vegana")
+	(OrdenPlato Segundo)
+	(PrecioR 9.5)
+	(TipoPlato Vegano Vegetariano Sibarita))
+
+([SBCProject_Class91] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar))
+
+([SBCProject_Class92] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class25]
+		[SBCProject_Class38]
+		[SBCProject_Class36]
+		[SBCProject_Class34]
+		[SBCProject_Class37]
+		[SBCProject_Class50])
+	(NombrePlato "Sushi de Verduras")
+	(OrdenPlato Primero Segundo)
+	(PrecioR 17.0)
+	(TipoPlato Vegano Vegetariano))
+
+([SBCProject_Class93] of  Tipo
+
+	(TipoMP Vegano Vegetariano Sibarita))
+
+([SBCProject_Class94] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class32]
+		[SBCProject_Class33]
+		[SBCProject_Class31]
+		[SBCProject_Class34])
+	(NombrePlato "Fruta de Temporada")
+	(OrdenPlato Postre)
+	(PrecioR 3.0)
+	(TipoPlato Vegano Vegetariano Familiar No-complejo))
+
+([SBCProject_Class95] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar Cl%C3%A1sico No-complejo Regional))
+
+([SBCProject_Class96] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class30]
+		[SBCProject_Class37])
+	(NombrePlato "Brownie vegano")
+	(OrdenPlato Postre)
+	(PrecioR 5.5)
+	(TipoPlato Vegano Vegetariano))
+
+([SBCProject_Class97] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar Sibarita))
+
+([SBCProject_Class98] of  Plato
+
+	(Ingredientes
+		[SBCProject_Class35]
+		[SBCProject_Class37])
+	(NombrePlato "Coulant vegano")
+	(OrdenPlato Postre)
+	(PrecioR 6.0)
+	(TipoPlato Vegano Vegetariano))
+
+([SBCProject_Class99] of  Tipo
+
+	(TipoMP Vegano Vegetariano Familiar Cl%C3%A1sico))
