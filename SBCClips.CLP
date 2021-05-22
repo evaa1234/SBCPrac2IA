@@ -1,4 +1,4 @@
-; Thu May 20 10:35:19 CEST 2021
+; Sat May 22 10:53:46 CEST 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -33,6 +33,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Menu)
 		(create-accessor read-write))
+	(multislot Bebida+Menu
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
+		(create-accessor read-write))
 	(multislot Ingredientes
 		(type INSTANCE)
 ;+		(allowed-classes Ingrediente)
@@ -50,10 +54,6 @@
 		(create-accessor read-write))
 	(multislot justificacionU
 		(type STRING)
-		(create-accessor read-write))
-	(multislot BebidaIngrediente
-		(type INSTANCE)
-;+		(allowed-classes Bebida)
 		(create-accessor read-write))
 	(single-slot DNI
 		(type STRING)
@@ -258,13 +258,13 @@
 		(type INSTANCE)
 ;+		(allowed-classes Menu)
 		(create-accessor read-write))
-	(multislot BebidaIngrediente
-		(type INSTANCE)
-;+		(allowed-classes Bebida)
-		(create-accessor read-write))
 	(single-slot NombrePlato
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot Bebida+Menu
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
 		(create-accessor read-write))
 	(multislot TipoPlato
 		(type SYMBOL)
@@ -424,7 +424,7 @@
 
 (definstances instancies 
 
-; Thu May 20 10:35:19 CEST 2021
+; Sat May 22 10:53:46 CEST 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -451,6 +451,7 @@
 
 ([SBCProject_Class100] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class41]
 		[SBCProject_Class40]
@@ -463,6 +464,7 @@
 
 ([SBCProject_Class10000] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class55]
 		[SBCProject_Class25]
@@ -483,6 +485,7 @@
 
 ([SBCProject_Class10002] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class51]
@@ -502,6 +505,7 @@
 
 ([SBCProject_Class10005] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class36]
 		[SBCProject_Class65]
@@ -520,6 +524,7 @@
 
 ([SBCProject_Class10007] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class52]
 		[SBCProject_Class37])
@@ -534,6 +539,7 @@
 
 ([SBCProject_Class10009] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class48])
 	(NombrePlato "Helado artesanal")
 	(OrdenPlato Postre)
@@ -546,6 +552,7 @@
 
 ([SBCProject_Class10011] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class54])
 	(NombrePlato "Crema catalana")
 	(OrdenPlato Postre)
@@ -558,6 +565,7 @@
 
 ([SBCProject_Class10013] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class57]
 		[SBCProject_Class23]
@@ -573,6 +581,7 @@
 
 ([SBCProject_Class10015] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class45]
 		[SBCProject_Class59]
@@ -588,6 +597,7 @@
 
 ([SBCProject_Class10018] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class22])
 	(NombrePlato "Bocadillos variados")
 	(OrdenPlato Segundo)
@@ -600,6 +610,7 @@
 
 ([SBCProject_Class10020] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class36]
 		[SBCProject_Class65]
@@ -616,6 +627,7 @@
 
 ([SBCProject_Class10022] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class61]
 		[SBCProject_Class37])
@@ -630,6 +642,7 @@
 
 ([SBCProject_Class10024] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class56])
 	(NombrePlato "Helado de tarrina")
 	(OrdenPlato Postre)
@@ -642,6 +655,7 @@
 
 ([SBCProject_Class10026] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class47])
 	(NombrePlato "Tiramisu")
 	(OrdenPlato Postre)
@@ -654,6 +668,7 @@
 
 ([SBCProject_Class10028] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class35])
 	(NombrePlato "Coulant")
 	(OrdenPlato Postre)
@@ -666,6 +681,7 @@
 
 ([SBCProject_Class10030] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class62])
 	(NombrePlato "Tarta de cafe")
 	(OrdenPlato Postre)
@@ -678,6 +694,7 @@
 
 ([SBCProject_Class10032] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class55])
 	(NombrePlato "Surtido de embutidos")
 	(OrdenPlato Primero Segundo)
@@ -690,6 +707,7 @@
 
 ([SBCProject_Class10034] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class10037])
 	(NombrePlato "Ostras")
 	(OrdenPlato Primero Segundo)
@@ -708,6 +726,7 @@
 
 ([SBCProject_Class10038] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class63]
 		[SBCProject_Class64])
@@ -731,6 +750,7 @@
 
 ([SBCProject_Class10043] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class65])
 	(NombrePlato "Bogabante")
 	(OrdenPlato Segundo)
@@ -743,6 +763,7 @@
 
 ([SBCProject_Class10045] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class22]
@@ -759,6 +780,7 @@
 
 ([SBCProject_Class10047] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class55]
 		[SBCProject_Class22]
@@ -774,6 +796,7 @@
 
 ([SBCProject_Class10049] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class51]
 		[SBCProject_Class28])
@@ -794,6 +817,7 @@
 
 ([SBCProject_Class10053] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class67])
 	(NombrePlato "Caracoles")
 	(OrdenPlato Segundo)
@@ -810,6 +834,7 @@
 
 ([SBCProject_Class103] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class22]
 		[SBCProject_Class42]
@@ -883,6 +908,7 @@
 
 ([SBCProject_Class20000] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class69])
 	(NombrePlato "Fricando")
 	(OrdenPlato Segundo)
@@ -895,6 +921,7 @@
 
 ([SBCProject_Class20002] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class66])
 	(NombrePlato "Brazo de gitano")
 	(OrdenPlato Postre)
@@ -907,6 +934,7 @@
 
 ([SBCProject_Class20004] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class68])
 	(NombrePlato "Bunuelos")
 	(OrdenPlato Postre)
@@ -919,6 +947,7 @@
 
 ([SBCProject_Class20006] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class71]
 		[SBCProject_Class21])
@@ -933,6 +962,7 @@
 
 ([SBCProject_Class20008] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class73]
 		[SBCProject_Class22])
@@ -947,6 +977,7 @@
 
 ([SBCProject_Class20010] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class22]
 		[SBCProject_Class76]
@@ -962,6 +993,7 @@
 
 ([SBCProject_Class20012] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class38]
@@ -977,6 +1009,7 @@
 
 ([SBCProject_Class20013] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class72]
 		[SBCProject_Class23]
@@ -992,6 +1025,7 @@
 
 ([SBCProject_Class20015] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class41]
 		[SBCProject_Class74]
@@ -1013,6 +1047,7 @@
 
 ([SBCProject_Class20019] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class39])
 	(NombrePlato "Tarta tatin")
 	(OrdenPlato Postre)
@@ -1356,6 +1391,7 @@
 
 ([SBCProject_Class81] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class21]
 		[SBCProject_Class22])
@@ -1370,6 +1406,7 @@
 
 ([SBCProject_Class84] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class24])
@@ -1384,6 +1421,7 @@
 
 ([SBCProject_Class86] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class27]
 		[SBCProject_Class39])
@@ -1398,6 +1436,7 @@
 
 ([SBCProject_Class88] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class28]
 		[SBCProject_Class29]
@@ -1419,6 +1458,7 @@
 
 ([SBCProject_Class90] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class21]
 		[SBCProject_Class40]
@@ -1436,6 +1476,7 @@
 
 ([SBCProject_Class92] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class38]
@@ -1454,6 +1495,7 @@
 
 ([SBCProject_Class94] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class32]
 		[SBCProject_Class33]
@@ -1470,6 +1512,7 @@
 
 ([SBCProject_Class96] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class30]
 		[SBCProject_Class37])
@@ -1484,6 +1527,7 @@
 
 ([SBCProject_Class98] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class35]
 		[SBCProject_Class37])
@@ -1495,6 +1539,7 @@
 ([SBCProject_Class99] of  Tipo
 
 	(TipoMP Vegano Vegetariano Familiar Cl%C3%A1sico))
+
 
 
 )
@@ -1584,7 +1629,7 @@
 (defclass VinoAbstracto (is-a USER) (role concrete)
 	(slot Vino (type INSTANCE) (create-accessor read-write))
 	(slot Nombre (type STRING) (create-accessor read-write))
-	(slot PVP (type FLOAT) (create-accessor read-write))
+	(slot PrecioR (type FLOAT) (create-accessor read-write))
 	(slot Categoria (type SYMBOL) (allowed-values Bajo Medio Alto) (create-accessor read-write))
 	(slot SubCategoria (type SYMBOL) (allowed-values Bajo Medio Alto) (create-accessor read-write))
 )
@@ -1689,12 +1734,12 @@
 
 
 (deftemplate MAIN::Entrada
-	(slot numComensales (type INTEGER) (default 0))
 	(slot presupuestoMax (type INTEGER) (default 0))
 	(slot bebidaPorPlato (type SYMBOL) (allowed-values FALSE TRUE))
 	(slot mesEvento (type INTEGER) (default 0))
 	(slot vino (type SYMBOL) (allowed-values FALSE TRUE) (default FALSE)) 
 	(slot alcohol (type SYMBOL) (allowed-values FALSE TRUE)) 
+	(slot numComensales (type INTEGER) (default 0))
 	(slot numComensalesVino (type FLOAT) (default 0.0)) 
 	(slot ninos (type SYMBOL) (allowed-values FALSE TRUE) (default FALSE)) 
 	(slot numComensalesNinos (type INTEGER) (default 0))
@@ -2271,7 +2316,7 @@
                        Medio -> [precioMedio...precioAlto)
                        Alto  -> [precioAlto...Inf)" (?precioMedio ?precioAlto)
 
-	(bind ?precio (send ?self:Vino get-PVP))
+	(bind ?precio (send ?self:Vino get-PrecioR))
 	(if (< ?precio ?precioMedio)
       then (send ?self put-SubCategoria Bajo)
       else (if (and (>= ?precio ?precioMedio) (< ?precio ?precioAlto))
@@ -2284,7 +2329,7 @@
 (defmessage-handler MAIN::VinoAbstracto calcula-categoria "Handler que calcula la categoria y su
 	sub-categoria en base al precio del plato" ()
 
-  (bind ?precio (send ?self:Vino get-PVP))
+  (bind ?precio (send ?self:Vino get-PrecioR))
   (if (<= ?precio 5)				;;; Vinos pvp = 5 -> bajo
         then (send ?self put-Categoria Bajo)
              (send ?self calcula-sub-categoria 3.0 5.0)
@@ -2335,7 +2380,7 @@
 		(send ?vinoAbstracto put-Vino ?vino)
 		(send ?vinoAbstracto calcula-categoria)
 		(send ?vinoAbstracto put-Nombre (send ?vino get-Nombre))
-		(send ?vinoAbstracto put-PVP (send ?vino get-PVP))
+		(send ?vinoAbstracto put-PrecioR (send ?vino get-PrecioR))
 	)
 )
 
@@ -2363,8 +2408,10 @@
 	?candidato
 )
 
-(deffunction generar-menu "Funcion principal que genera la salida y genera los menus"
-	(?categoria ?subCategoria ?numComensales ?numAlergicosFruta ?numAlergicosLactosa ?numAlergicosMarisco ?numAlergicosPescado ?numComensalesVino ?siQuiereVino ?alcohol ?numComensalesNinos)
+(deffunction generar-menu "genera los menus" 
+	(?categoria ?subCatecoria ?numComensales ?numAlergicosFruta ?numAlergicosLactosa
+	 ?numAlergicosMarisco ?numAlergicosPescado ?numComensalesVino ?siQuiereVino ?alcohol ?numComensalesNinos)
+	
 	(bind ?numGenteConRestriccion (+ ?numAlergicosFruta (+ ?numAlergicosLactosa (+ ?numAlergicosMarisco ?numAlergicosPescado))))
 	(bind ?menuGeneral (make-instance (gensym) of MenuAbstracto))
 	(bind ?menuSinFruta (make-instance (gensym) of MenuAbstracto))
@@ -2407,19 +2454,18 @@
 	(printout t "|                                                                              |" crlf)
 	(if (eq ?subCategoria Bajo)
 		then
-		(printout t "|                              Menu Economico                                  |" crlf)
+		(printout t "|                              Menu Precio Bajo                                  |" crlf)
 		else
 			(if (eq ?subCategoria Medio)
 				then
-				(printout t "|                            Menu Recomendado                                  |" crlf)
+				(printout t "|                            Menu Precio Medio                                 |" crlf)
 				else
-				(printout t "|                             Menu Deluxe                                      |" crlf)
+				(printout t "|                             Menu Precio Alto                                      |" crlf)
 			)
 	)
-	(printout t "|                                Rico Rico                                     |" crlf)
 	(printout t "===============================================================================|" crlf)
 
-	(printout t "*|     __Entrante___________________________________                          |*" crlf)
+	(printout t "*|    - PRIMERO -                         |*" crlf)
 	(if (< ?numGenteConRestriccion (* 0.5 ?numComensales))
 		then (send ?menuGeneral imprimir-plato Primero)
 		(bind ?alternativaGeneral TRUE)
@@ -2428,7 +2474,7 @@
 	(if (> ?numAlergicosFruta 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinFruta tienen-primero-igual ?menuGeneral)))
 				then
-					(printout t "*|          --Sin fruta--                                                    |*" crlf)
+					(printout t "*|          Sin fruta                                                  |*" crlf)
 					(send ?menuSinFruta imprimir-plato Primero)
 					(bind ?alternativaSinFruta TRUE)
 		)
@@ -2438,54 +2484,48 @@
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinLactosa tienen-primero-igual ?menuGeneral)))
 				then (if (or (not (> ?numAlergicosFruta 0)) (not (send ?menuSinLactosa tienen-primero-igual ?menuSinFruta)))
 					then
-						(printout t "*|          --Sin lactosa--                                                   |*" crlf)
+						(printout t "*|          Sin lactosa                                                   |*" crlf)
 						(send ?menuSinLactosa imprimir-plato Primero)
 						(bind ?alternativaSinLactosa TRUE)
 				  )
-			;;)
 		  )
 	)
 
 	(if (> ?numAlergicosMarisco 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinMarisco tienen-primero-igual ?menuGeneral)))
-			;;then (if (or (not (> ?numVegetarianos 0)) (not (send ?menuSinMarisco tienen-primero-igual ?menuVegetariano)))
 				then (if (or (not (> ?numAlergicosFruta 0)) (not (send ?menuSinMarisco tienen-primero-igual ?menuSinFruta)))
 					then (if (or (not (> ?numAlergicosLactosa 0)) (not (send ?menuSinMarisco tienen-primero-igual ?menuSinLactosa)))
 					    then
-						(printout t "*|          --Sin Marisco--                                                   |*" crlf)
+						(printout t "*|          Sin Marisco                                                   |*" crlf)
 						(send ?menuSinMarisco imprimir-plato Primero)
 						(bind ?alternativaSinMarisco TRUE)
 				  	)
 				  )
-			  ;;)
 		  )
 	)
 
 	(if (> ?numAlergicosPescado 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinPescado tienen-primero-igual ?menuGeneral)))
-			;;then (if (or (not (> ?numVegetarianos 0)) (not (send ?menuSinPescado tienen-primero-igual ?menuVegetariano)))
 				then (if (or (not (> ?numAlergicosFruta 0)) (not (send ?menuSinPescado tienen-primero-igual ?menuSinFruta)))
 					then (if (or (not (> ?numAlergicosLactosa 0)) (not (send ?menuSinPescado tienen-primero-igual ?menuSinLactosa)))
 					    then (if (or (not (> ?numAlergicosMarisco 0)) (not (send ?menuSinPescado tienen-primero-igual ?menuSinMarisco)))
 					       then
-						(printout t "*|          --Sin Pescado--                                                   |*" crlf)
+						(printout t "*|          Sin Pescado                                                  |*" crlf)
 						(send ?menuSinPescado imprimir-plato Primero)
 						(bind ?alternativaSinPescado TRUE)
 				  	    )
 				  	)
 				  )
-			  ;;)
 		  )
 	)
 
 	(if (> ?numComensalesNinos 0)
 		then
-			(printout t "*|          --Para los ninos--                                                |*" crlf)
+			(printout t "*|          Menu Ninos:                                                |*" crlf)
 			(send ?menuNinos imprimir-plato Primero)
 	)
 
-	(printout t "*|                                                                            |*" crlf)
-	(printout t "*|     __Plato principal____________________________                          |*" crlf)
+	(printout t "*|     - SEGUNDO -                        |*" crlf)
 
 	(bind ?precioVinoGeneral 0)
 	(bind ?precioVinoSinLactosa 0)
@@ -2495,9 +2535,6 @@
 		then (send ?menuGeneral imprimir-plato Segundo)
 		(if ?siQuiereVino
 							then
-								
-								;;(bind ?ingredientePrincipal (send (send ?menuSinLactosa get-Menu) EncontrarIngredientePrincipal))
-								;;(bind ?plato ?self:Plato)
 								(bind ?listaIngredientes ?menuSinLactosa get-Ingredientes)
 								(loop-for-count (?i 1 (length$ ?listaIngredientes)) do
 									(bind ?ingrediente (nth$ ?i $?listaIngredientes))
@@ -2508,27 +2545,23 @@
 											)
 
 								)
-								;;(bind ?tipoVino Blanco)
 
 								(bind ?vino (buscar-vino ?tipoVino ?categoria ?subCategoria))
-								(bind ?precioVinoSinLactosa (send ?vino get-PVP))
+								(bind ?precioVinoSinLactosa (send ?vino get-PrecioR))
 								(bind ?totalVinos (+ 1 ?totalVinos))
 								(send ?vino imprimir-carta)
-						)
+		)
 		(bind ?alternativaGeneral TRUE)
 	)
 
 
 	(if (> ?numAlergicosLactosa 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinLactosa tienen-segundo-igual ?menuGeneral)))
-			;;then (if (or (not (> ?numVegetarianos 0)) (not (send ?menuSinLactosa tienen-segundo-igual ?menuVegetariano)))
 					then
-						(printout t "*|          --Sin lactosa--                                                   |*" crlf)
+						(printout t "*|          Sin lactosa                                                   |*" crlf)
 						(send ?menuSinLactosa imprimir-plato Segundo)
 						(if ?siQuiereVino
 							then
-								;;(bind ?ingredientePrincipal (send (send ?menuSinLactosa get-Menu) EncontrarIngredientePrincipal))
-								;;(bind ?plato ?self:Plato)
 								(bind ?listaIngredientes ?menuSinLactosa get-Ingredientes)
 								(loop-for-count (?i 1 (length$ ?listaIngredientes)) do
 									(bind ?ingrediente (nth$ ?i $?listaIngredientes))
@@ -2539,103 +2572,88 @@
 											)
 
 								)
-								;;(bind ?tipoVino Blanco)
 
 								(bind ?vino (buscar-vino ?tipoVino ?categoria ?subCategoria))
-								(bind ?precioVinoSinLactosa (send ?vino get-PVP))
+								(bind ?precioVinoSinLactosa (send ?vino get-PrecioR))
 								(bind ?totalVinos (+ 1 ?totalVinos))
 								(send ?vino imprimir-carta)
 						)
 						(bind ?alternativaSinLactosa TRUE)
-
-				  ;;)
-			  ;;)
-			  ;;)
 		  )
 	)
 
 	(if (> ?numComensalesNinos 0)
 		then
-			(printout t "*|          --Para los ninos--                                                |*" crlf)
+			(printout t "*|          Menu Ninos:                                             |*" crlf)
 			(send ?menuNinos imprimir-plato Segundo)
 	)
 
-	(printout t "*|                                                                            |*" crlf)
-	(printout t "*|     __Postre_____________________________________                          |*" crlf)
-
-	(if (< ?numGenteConRestriccion (* 0.5 ?numComensales)) ; imprimir menu normal
+	(printout t "*|     - POSTRE -			|*" crlf)
+	(if (< ?numGenteConRestriccion (* 0.5 ?numComensales)) 
 		then (send ?menuGeneral imprimir-plato Postre)
 		(bind ?alternativaGeneral TRUE)
 	)
 	(if (> ?numAlergicosFruta 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinFruta tienen-postre-igual ?menuGeneral)))
-			;;then (if (or (not (> ?numVegetarianos 0)) (not (send ?menuSinFruta tienen-postre-igual ?menuVegetariano)))
 				then
-					(printout t "*|          --Sin fruta--                                                    |*" crlf)
+					(printout t "*|          Sin fruta                                                    |*" crlf)
 					(send ?menuSinFruta imprimir-plato Postre)
 					(bind ?alternativaSinFruta TRUE)
-			;;)
 		)
 	)
 
 	(if (> ?numAlergicosLactosa 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinLactosa tienen-postre-igual ?menuGeneral)))
-			;;then (if (or (not (> ?numVegetarianos 0)) (not (send ?menuSinLactosa tienen-postre-igual ?menuVegetariano)))
 				then (if (or (not (> ?numAlergicosFruta 0)) (not (send ?menuSinLactosa tienen-postre-igual ?menuSinFruta)))
 					then
-						(printout t "*|          --Sin lactosa--                                                   |*" crlf)
+						(printout t "*|          Sin lactosa                                                  |*" crlf)
 						(send ?menuSinLactosa imprimir-plato Postre)
 						(bind ?alternativaSinLactosa TRUE)
 				  )
-			  ;;)
 		  )
 	)
 
 	(if (> ?numAlergicosMarisco 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinMarisco tienen-postre-igual ?menuGeneral)))
-			;;then (if (or (not (> ?numVegetarianos 0)) (not (send ?menuSinMarisco tienen-postre-igual ?menuVegetariano)))
 				then (if (or (not (> ?numAlergicosFruta 0)) (not (send ?menuSinMarisco tienen-postre-igual ?menuSinFruta)))
 					then (if (or (not (> ?numAlergicosLactosa 0)) (not (send ?menuSinMarisco tienen-postre-igual ?menuSinLactosa)))
 					   then
-						(printout t "*|          --Sin Marisco--                                                   |*" crlf)
+						(printout t "*|          Sin Marisco                                                   |*" crlf)
 						(send ?menuSinMarisco imprimir-plato Postre)
 						(bind ?alternativaSinMarisco TRUE)
 				  	)
 				  )
-			  ;;)
 		  )
 	)
 
 	(if (> ?numAlergicosPescado 0)
 		then (if (or (not (< ?numGenteConRestriccion (* 0.5 ?numComensales))) (not (send ?menuSinPescado tienen-postre-igual ?menuGeneral)))
-			;;then (if (or (not (> ?numVegetarianos 0)) (not (send ?menuSinPescado tienen-postre-igual ?menuvegetarianos)))
 				then (if (or (not (> ?numAlergicosFruta 0)) (not (send ?menuSinPescado tienen-postre-igual ?menuSinFruta)))
 					then (if (or (not (> ?numAlergicosLactosa 0)) (not (send ?menuSinPescado tienen-postre-igual ?menuSinLactosa)))
 					    then (if (or (not (> ?numAlergicosMarisco 0)) (not (send ?menuSinPescado tienen-postre-igual ?menuSinMarisco)))
 					   	then
-						(printout t "*|          --Sin Pescado--                                                   |*" crlf)
+						(printout t "*|          Sin Pescado                                                   |*" crlf)
 						(send ?menuSinPescado imprimir-plato Postre)
 						(bind ?alternativaSinPescado TRUE)
 				  	     )
 				  	)
 				  )
-			  ;;)
 		  )
 	)
 
 	(if (> ?numComensalesNinos 0)
 		then
-			(printout t "*|          --Para los ninos--                                                |*" crlf)
+			(printout t "*|          Menu Ninos:                                                |*" crlf)
 			(send ?menuNinos imprimir-plato Postre)
 	)
 
 	(printout t "*|                                                                            |*" crlf)
 	(printout t "*|                                                                            |*" crlf)
 	(printout t "*|                        ----------------------                              |*" crlf)
-	(bind ?subtotal 0)
+	(bind ?total 0)
 	(if ?alternativaGeneral
 		then
-			(bind ?subtotal (* (send ?menuGeneral get-Precio) (- ?numComensales ?numGenteConRestriccion)))
+			(bind ?total (* (send ?menuGeneral get-Precio) (- ?numComensales ?numGenteConRestriccion)))
 			(format t "*|              Precio Menu              :         %05.2f  (%02d)                |*%n" (send ?menuGeneral get-Precio) (- ?numComensales ?numGenteConRestriccion))
 
 	)
@@ -2645,7 +2663,7 @@
 			(if (not ?alternativaGeneral)
 				then (bind ?numAlergicosFruta (+ ?numAlergicosFruta (* 0.33 (- ?numComensales ?numGenteConRestriccion))))
 			)
-			(bind ?subtotal (+ ?subtotal (* (send ?menuSinFruta get-Precio) ?numAlergicosFruta)))
+			(bind ?total (+ ?total (* (send ?menuSinFruta get-Precio) ?numAlergicosFruta)))
 			(format t "*|              Precio Menu (sin fruta) :         %05.2f  (%02d)                |*%n" (send ?menuSinFruta get-Precio) ?numAlergicosFruta)
 	)
 
@@ -2654,7 +2672,7 @@
 			(if (not ?alternativaGeneral)
 				then (bind ?numAlergicosLactosa (+ ?numAlergicosLactosa (* 0.33 (- ?numComensales ?numGenteConRestriccion))))
 			)
-			(bind ?subtotal (+ ?subtotal (* (send ?menuSinLactosa get-Precio) ?numAlergicosLactosa)))
+			(bind ?total (+ ?total (* (send ?menuSinLactosa get-Precio) ?numAlergicosLactosa)))
 			(format t "*|              Precio Menu (sin lactosa):         %05.2f  (%02d)                |*%n" (send ?menuSinLactosa get-Precio) ?numAlergicosLactosa)
 	)
 
@@ -2663,7 +2681,7 @@
 			(if (not ?alternativaGeneral)
 				then (bind ?numAlergicosMarisco (+ ?numAlergicosMarisco (* 0.33 (- ?numComensales ?numGenteConRestriccion))))
 			)
-			(bind ?subtotal (+ ?subtotal (* (send ?menuSinMarisco get-Precio) ?numAlergicosMarisco)))
+			(bind ?total (+ ?total (* (send ?menuSinMarisco get-Precio) ?numAlergicosMarisco)))
 			(format t "*|              Precio Menu (sin Marisco):         %05.2f  (%02d)                |*%n" (send ?menuSinMarisco get-Precio) ?numAlergicosMarisco)
 	)
 
@@ -2672,43 +2690,35 @@
 			(if (not ?alternativaGeneral)
 				then (bind ?numAlergicosPescado (+ ?numAlergicosPescado (* 0.33 (- ?numComensales ?numGenteConRestriccion))))
 			)
-			(bind ?subtotal (+ ?subtotal (* (send ?menuSinPescado get-Precio) ?numAlergicosPescado)))
+			(bind ?total (+ ?total (* (send ?menuSinPescado get-Precio) ?numAlergicosPescado)))
 			(format t "*|              Precio Menu (sin Pescado):         %05.2f  (%02d)                |*%n" (send ?menuSinPescado get-Precio) ?numAlergicosPescado)
 	)
 
 	(if (> ?numComensalesNinos 0)
 		then
-			(bind ?subtotal (+ ?subtotal (+ (* ?numComensalesNinos (send ?menuNinos get-Precio))
+			(bind ?total (+ ?total (+ (* ?numComensalesNinos (send ?menuNinos get-Precio))
 																			(* ?numComensalesNinos 0.80))))
-			(format t "*|              Precio Menu para ninos   :         %05.2f  (%02d)                |*%n" (send ?menuNinos get-Precio) ?numComensalesNinos)
-			(format t "*|              Precio zumos y refrescos :          0.80   (%02d)                |*%n" ?numComensalesNinos)
+			(format t "*|              Precio Menu Ninos   :         %05.2f  (%02d)                |*%n" (send ?menuNinos get-Precio) ?numComensalesNinos)
+			(format t "*|              Precio Refrescos :          0.80   (%02d)                |*%n" ?numComensalesNinos)
 	)
 
 	(if ?siQuiereVino
 		then
 			(bind ?precioVino (/ (+ ?precioVinoGeneral
 												         (+ ?totalVinos ?precioVinoSinLactosa))))
-			(bind ?subtotal (+ ?subtotal (* ?precioVino ?numComensalesVino)))
+			(bind ?total (+ ?total (* ?precioVino ?numComensalesVino)))
 			(format t "*|              Precio Vino              :         %05.2f  (%02d)                |*%n" ?precioVino ?numComensalesVino)
 	)
 
 	(if  (and ?alcohol (< ?numComensalesVino (- ?numComensales ?numComensalesNinos)))
 		then
-			(bind ?totalCervezas (- ?numComensales ?numComensalesNinos))
-			(format t "*|              Precio cerveza           :         1.20  (%d)                 |*%n" ?totalCervezas)
-			(bind ?subtotal (+ ?subtotal (* 1.20 ?totalCervezas)))
+			(bind ?totalAlcohol (- ?numComensales ?numComensalesNinos))
+			(format t "*|              Precio bebida alcoholica           :         1.20  (%d)                 |*%n" ?totalAlcohol)
+			(bind ?total (+ ?total (* 1.20 ?totalAlcohol)))
 	)
 
-  (bind ?iva (* 0.21 ?subtotal))
-	(bind ?total (+ ?iva ?subtotal))
-	(format t "*|              Subtotal                 :         %06.2f                     |*%n" ?subtotal)
-	(format t "*|              IVA (21%%)                :         %06.2f                     |*%n" ?iva)
-	(format t "*|              Total                    :         %06.2f                     |*%n" ?total)
-	(printout t "*|                    El agua esta incluida en el menu                        |*" crlf)
-	(printout t "*|                        ----------------------                              |*" crlf)
+	(format t "*|             Total                 :         %06.2f                     |*%n" ?total)
 	(printout t "*|                                                                            |*" crlf)
-	(printout t "================================================================================" crlf)
-
 )
 
  
@@ -2732,10 +2742,8 @@
     (calcular-platos-abstractos)
 		(calcular-vinos-abstractos)
     (printout t "====================================================================" crlf)
-    (printout t "=    Sistema de elaboracion de menus personalizados Rico Rico      =" crlf)
+    (printout t "	Generador de menus personalizados de la empresa RICO-RICO		" crlf)
     (printout t "====================================================================" crlf)
-    (printout t crlf)
-    (printout t "Bienvenido! A continuacion se le formularan una serie de preguntas para poder crear el menu que mas encaje con sus preferencias." crlf)
     (printout t crlf)
     (focus recopilacion)
 )
@@ -2743,6 +2751,8 @@
 ;;;; PREGUNTAS DEL EVENTO
 
 (defrule recopilacion::temporadaEvento "regla para saber la temporada del evento"
+	(Pregunta-temporadaEvento)
+	(not (Pregunta-temporadaEvento))
 	(nuevo_cliente)	
 	?h <- (Cliente ?DNI)
 	?persona <-(object (is-a Cliente)(DNI ?DNI_A))
@@ -2756,6 +2766,7 @@
 		(case 3 then (assert(Temporada Primavera)))
 		(case 4 then (assert(Temporada Verano)))	
 	)
+	(assert (Pregunta-temporadaEvento))
 )
 
 ;;;; PREGUNTAS DEL MENU
@@ -2781,6 +2792,7 @@
 ;;)
 
 (defrule recopilacion::numero-comensales "Pregunta al cliente el numero de comensales"
+		(Pregunta-Numero-Comensales)
 		(not (Pregunta-Numero-Comensales))
 		?e <- (Entrada)
     =>
@@ -2790,6 +2802,7 @@
 )
 
 (defrule recopilacion::pregunta-tipoPlato-comida "Pregunta al cliente el tipo de platos de la comida"
+		(Pregunta-tipoPlato-Comida)
 		(not (Pregunta-tipoPlato-Comida))
 		?e <- (Entrada)
     =>
@@ -2818,6 +2831,8 @@
 
 
 (defrule recopilacion::maxPrecio "regla para saber el precio maximo a gastar  "
+	(Pregunta-maxPrecio)
+	(not (Pregunta-maxPrecio-Completada))
 	(nuevo_cliente)	
 	?h <- (Cliente ?DNI)
 	?persona <-(object (is-a Cliente)(DNI ?DNI_A))
@@ -2832,11 +2847,22 @@
  		     (assert (precio))
 			 ;;(assert(JDedicacion Usuario)) 
 		)		  
-	)	
+	)
+	(assert (Pregunta-maxPrecio-Completada))	
+)
+
+(defrule recopilacion::pregunta-comensales-ninos "Pregunta al cliente cuantos ninos acudiran. Puede ser 0"
+		(Pregunta-Comensales-Ninos)
+		(not (Pregunta-Ninos-Completada))
+		?e <- (Entrada (numComensales ?numComensales))
+    =>
+		(bind ?num (pregunta-numerica-rango "¿Cuantos ninos asistiran?" 1 (- ?numComensales 2)))
+		(modify ?e (numComensalesNinos ?num))
+		(assert (Pregunta-Ninos-Completada))
 )
 
 (defrule recopilacion::pregunta-vino "Pregunta al cliente si se quiere incluir vino en el menu"
-		(Preguntar-Vino)
+		(Pregunta-Vino)
 		(not (Pregunta-Vino-Completada))
 		?e <- (Entrada)
 		=>
@@ -2862,7 +2888,7 @@
 						then (modify ?e (numComensalesVino (* 0.5 (- ?numComensales ?numComensalesNinos))))
 						else (if (eq ?respuesta y) ;;;75%
 								then (modify ?e (numComensalesVino (* 0.75 (- ?numComensales ?numComensalesNinos))))
-								else (modify ?e (numComensalesVino (- ?numComensales ?numComensalesNinos))) ;;;100%
+								else (modify ?e (numComensalesVino (- ?numComensales ?numComensalesNinos))) 
 						)
 				)
 		)
@@ -2871,23 +2897,28 @@
 )
 
 (defrule recopilacion::ingredProhibSiONo "regla para saber si tiene algun tipo de alergia o restriccion"
+	(Pregunta-ingr)
 	(nuevo_cliente)
 	?h <- (Cliente ?DNI)
 	?persona <-(object (is-a Cliente)(DNI ?DNI_A))
 	(test (eq (str-compare  ?DNI ?DNI_A) 0))
+	(not (Pregunta-ingr))
 	=>
 	(bind ?q (pregunta-general "Algun ingrediente y/o alimento que no deba ser incluido en los menus? [Si(S) No(N)]:  "))
 	(switch ?q
 		(case S then (assert(PreferenciasI S)))
 		(case N then (assert(PreferenciasI N)))
 	)
+	(assert (Pregunta-ingr))
 )
 
 (defrule recopilacion::alimProhibidos "regla para saber que alimentos no quiere en los menus"
+	(Pregunta-Alergias)
 	(PreferenciasI S)
 	(nuevo_cliente)
 	;;(Restric)
 	(not(FI))
+	(not (Pregunta-Alergias))
 	=>
 	(printout t "Indique alergenos o alimentos que no desee incluir en los menus: " crlf)
 	(printout t "1. Fruta " crlf)
@@ -2905,7 +2936,7 @@
 			(case 4 then   (assert(RestriccionIngrediente Pescado)))
         	)
      	)
-  ;;(assert(RestriccionesAnadidas))
+	(assert (Pregunta-Alergias))
 )
 
 (defrule recopilacion::pregunta-tipo-alergiasF "Pregunta al cliente por el tipo de alergias"
@@ -3004,14 +3035,162 @@
 	)
 )
 
-(defrule recopilacion::finPreguntasAbstraccionDatos "regla para pasar al modulo siguiente"
-      (nuevo_cliente)
-      => 
-	  (printout t crlf)
-	  (printout t "Modulos: "crlf)
-	  (printout t "Restricciones y Preferencias almacenadas" crlf)
-      (focus inferir_datos)     
+(defrule recopilacion::entrada-completada "Regla que comprueba que todas las preguntas han sido respondidas"
+	(Pregunta-tipoPlato-Comida)
+	(Pregunta-temporadaEvento)
+	(Pregunta-Numero-Comensales)
+	(Pregunta-maxPrecio)
+	(Pregunta-Ninos)
+	(Preguntar-Alcohol)
+	(or (not (Pregunta-Vino)) (and (Pregunta-Vino) (Pregunta-Vino-Completada)))
+	(or (not (Pregunta-Comensales-Vino)) (and (Pregunta-Comensales-Vino) (Pregunta-Comensales-Vino-Completada)))
+	(Pregunta-ingr)
+	(Pregunta-Alergias)
+	(or (not (Pregunta-Tipo-AlergiasF)) (and (Pregunta-Tipo-AlergiasF) (Pregunta-Tipo-AlergiaFs-Completada)))
+	(or (not (Pregunta-Tipo-AlergiasL)) (and (Pregunta-Tipo-AlergiasL) (Pregunta-Tipo-AlergiasL-Completada)))
+	(or (not (Pregunta-Tipo-AlergiasM)) (and (Pregunta-Tipo-AlergiasM) (Pregunta-Tipo-AlergiasM-Completada)))
+	(or (not (Pregunta-Tipo-AlergiasP)) (and (Pregunta-Tipo-AlergiasP) (Pregunta-Tipo-AlergiasP-Completada)))
+  =>
+  (focus abstraccion)
 )
+
+;                   ======================================================================
+;                   ======================  Modulo de abstraccion   ======================
+;                   ======================================================================
+
+(defrule abstraccion::abstraer-presupuesto "Regla que nos permite abstraer del presupuesto propuesto por
+	el usuario a unos valores abstractos"
+
+	(not (ProblemaAbstracto))
+  (Entrada (presupuestoMax ?presupuestoMax))
+  =>
+  (if  (< ?presupuestoMax 15)
+      then (assert (ProblemaAbstracto (presupuesto Bajo)))
+      else (if (< ?presupuestoMax 50)
+          then (assert (ProblemaAbstracto (presupuesto Medio)))
+          else (if (< ?presupuestoMax 80)
+              then (assert (ProblemaAbstracto (presupuesto Alto)))
+              else (assert (ProblemaAbstracto (presupuesto MuyAlto)))
+          )
+      )
+  )
+)
+
+(defrule abstraccion::abstraer-comensales "Regla que nos permite abstraer el numero de comensales
+	propuesto por el usuario a unos valores abstractos"
+
+	(not (abstraccion-comensales))
+	?e <- (ProblemaAbstracto)
+	(Entrada (numComensales ?numComensales))
+	=>
+  (if (< ?numComensales 20)
+      then (modify ?e (numComensales Bajo))
+      else (if (< ?numComensales 80)
+          then (modify ?e (numComensales Medio))
+          else (if (< ?numComensales 150)
+              then (modify ?e (numComensales Alto))
+              else (modify ?e (numComensales MuyAlto))
+          )
+      )
+  )
+	(assert (abstraccion-comensales))
+)
+
+;;(defrule abstraccion::abstraer-temporada "Regla que nos permite abstraer el mes del evento propuesto por
+;;	el usuario a unos valores abstractos"
+;;
+;;	(not (abstraccion-temporada))
+;;	?e <- (ProblemaAbstracto)
+;;  (Entrada (mesEvento ?mesEvento))
+;;  =>
+;;  (if (and (>= ?mesEvento 4) (<= ?mesEvento 5))
+;;      then (modify ?e (temporada Primavera))
+;;      else (if (and (>= ?mesEvento 6) (< ?mesEvento 9))
+;;          then (modify ?e (temporada Verano))
+;;          else (if (and (>= ?mesEvento 10) (< ?mesEvento 11))
+;;              then (modify ?e (temporada Otono))
+;;              else (modify ?e (temporada Invierno))
+;;      )
+;;  )
+;;	(assert (abstraccion-temporada))
+;;)
+
+(defrule abstraccion::abstraccion-completada "Regla que comprueba que todas las preguntas han sido respondidas"
+	(abstraccion-comensales)
+	;;(abstraccion-temporada)
+  =>
+ 	(focus solucionConcreta)
+)
+
+;                   ======================================================================
+;                   ===================   Modulo de solucion concreta   ==================
+;                   ======================================================================
+
+(defrule solucionConcreta::calcular-puntuaciones "Regla que calcula las puntuaciones de los platos"
+	(initial-fact)
+	(ProblemaAbstracto (presupuesto ?presupuesto))
+	(ProblemaAbstracto (numComensales ?numComensales))
+	(ProblemaAbstracto (temporada ?temporada))
+	(Entrada (tipoPlato ?tipoPlato))
+	=>
+	(bind ?listaPlatosAbstractos (find-all-instances ((?inst PlatoAbstracto)) TRUE))
+	(loop-for-count (?i 1 (length$ ?listaPlatosAbstractos)) do
+		(bind ?platoAbstracto (nth$ ?i ?listaPlatosAbstractos))
+		(send ?platoAbstracto calcula-puntuacion-presupuesto ?presupuesto)
+		(send ?platoAbstracto calcula-puntuacion-temporada ?temporada)
+		(send ?platoAbstracto calcula-puntuacion-tipoPlato ?tipoPlato)
+	)
+
+	(focus solucionConcreta)
+)
+
+(defrule solucionConcreta::imprimirResultado "Imprime por pantalla los diferentes menus generados
+	dependiendo de las decisiones que toma el sbc"
+
+	(not (final))
+	(Entrada (numComensales ?numComensales))
+	(Entrada (numAlergicosFruta ?numAlergicosFruta))
+	(Entrada (numAlergicosLactosa ?numAlergicosLactosa))
+	(Entrada (numAlergicosMarisco ?numAlergicosMarisco))
+	(Entrada (numAlergicosPescado ?numAlergicosPescado))
+	(Entrada (numComensalesNinos ?numComensalesNinos))
+	(Entrada (vino ?siQuiereVino))
+	(Entrada (ninos ?ninos))
+	(Entrada (alcohol ?alcohol))
+	(Entrada (numComensalesVino ?numComensalesVino))
+	(ProblemaAbstracto (presupuesto ?categoria))
+	=>
+	(if (eq ?categoria MuyAlto) then
+	  (bind ?categoria Alto)
+	)
+
+	(printout t crlf)
+	(printout t crlf)
+	(generar-menu ?categoria Bajo ?numComensales ?numAlergicosFruta ?numAlergicosLactosa
+								?numAlergicosMarisco ?numAlergicosPescado ?numComensalesVino ?siQuiereVino ?alcohol ?numComensalesNinos)
+	(printout t crlf)
+	(printout t crlf)
+	(generar-menu ?categoria Medio ?numComensales ?numAlergicosFruta ?numAlergicosLactosa
+								?numAlergicosMarisco ?numAlergicosPescado ?numComensalesVino ?siQuiereVino ?alcohol ?numComensalesNinos)
+	(printout t crlf)
+	(printout t crlf)
+	(generar-menu ?categoria Alto ?numComensales ?numAlergicosFruta ?numAlergicosLactosa
+								?numAlergicosMarisco ?numAlergicosPescado ?numComensalesVino ?siQuiereVino ?alcohol ?numComensalesNinos)
+	(assert (final))
+)
+
+;;----------------------------------------------------------------------
+
+
+
+;;(defrule recopilacion::finPreguntasAbstraccionDatos "regla para pasar al modulo siguiente"
+;;      (nuevo_cliente)
+;;      => 
+;;	  (printout t crlf)
+;;	  (printout t "Modulos: "crlf)
+;;	  (printout t "Restricciones y Preferencias almacenadas" crlf)
+;;      (focus inferir_datos)     
+;;)
 
 
 ;;;---------------------------------------------------------------------------------------------------------------------------
@@ -3068,32 +3247,7 @@
 ;;;----------  				MODULO DE FILTRADO			 		---------- 			
 ;;;---------------------------------------------------------------------------------------------------------------------------
 
-;; En este modulo se obtienen todos los platos instanciados
-;; y se irán descartando si no cumplen alguna restriccion
 
-(defmodule filtrado
-	(import MAIN ?ALL) 
-	;;(import evento ?ALL)
-	(import inferir_datos ?ALL) 
-	(export ?ALL)
-)
-
-;;; Obtener todos los platos para poder descartar segun las restricciones 
-;;; ------------- (de momento no hemos hecho restricciones) ----------------------
-(defrule obtenerPlatos 
-	(nuevo_cliente)
-	=>
-	(bind $?allPlatos (find-all-instances((?inst Plato)) TRUE))
-	(loop-for-count (?i 1 (length$ ?allPlatos)) do
-		(bind ?plato (nth$ ?i ?allPlatos)) 
-		(bind ?nR (sym-cat R**(send ?plato get-NombrePlato)))	 
-		(bind ?inst (make-instance ?nR of Recomendacion))
-		(send ?inst put-recomendacion (instance-address (nth$ ?i ?allPlatos)))
-	)
-	;;(printout t crlf)
-	;;(printout t " Platos eliminadas por no cumplir restricciones: " crlf)
-	;;(printout t "----------------------------------------------------- " crlf)
-)
 
 ;;(defrule descartandoPorTemporada 
 
@@ -3110,14 +3264,6 @@
 
 ;;)
 
-(defrule finfiltrado "regla para pasar al siguiente modulo"
-      (nuevo_estudiante)
-      => 
-	  (printout t crlf)
-	  (printout t "Modulos: "crlf)
-	  (printout t "Asociacion heuristica hecha" crlf)
-      (focus valorar_preferencias) 
-)
 
 
 ;;;---------------------------------------------------------------------------------------------------------------------------
@@ -3127,21 +3273,21 @@
 ;; En este modulo se valoraran las solcuiones en funcion de las preferencias
 ;; explicitadas por el aluno y las inferidas del expediente para dar un valor cuantitativo a cada solucion
 
-(defmodule valorar_preferencias
-	(import MAIN ?ALL) 
-	(import inferir_datos ?ALL)  
-	;;(import evento ?ALL)
-	(export ?ALL)
-)
+;;(defmodule valorar_preferencias
+;;	(import MAIN ?ALL) 
+;;	(import inferir_datos ?ALL)  
+;;	;;(import evento ?ALL)
+;;	(export ?ALL)
+;;)
 
 
 
 
 
-(defrule finvalorarpreferencias	"regla para pasar al modulo siguiente"
-	(nuevo_estudiante)
-	=> 
-	(printout t "Refinamiento hecho.....mostrando solucion " crlf) 
-	(focus recomendaciones) 
-)
+;;(defrule finvalorarpreferencias	"regla para pasar al modulo siguiente"
+;;	(nuevo_estudiante)
+;;	=> 
+;;	(printout t "Refinamiento hecho.....mostrando solucion " crlf) 
+;;	(focus recomendaciones) 
+;;)
 

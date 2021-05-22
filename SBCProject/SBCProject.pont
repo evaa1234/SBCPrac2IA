@@ -1,4 +1,4 @@
-; Thu May 20 10:35:19 CEST 2021
+; Sat May 22 10:53:46 CEST 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -33,6 +33,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Menu)
 		(create-accessor read-write))
+	(multislot Bebida+Menu
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
+		(create-accessor read-write))
 	(multislot Ingredientes
 		(type INSTANCE)
 ;+		(allowed-classes Ingrediente)
@@ -50,10 +54,6 @@
 		(create-accessor read-write))
 	(multislot justificacionU
 		(type STRING)
-		(create-accessor read-write))
-	(multislot BebidaIngrediente
-		(type INSTANCE)
-;+		(allowed-classes Bebida)
 		(create-accessor read-write))
 	(single-slot DNI
 		(type STRING)
@@ -258,13 +258,13 @@
 		(type INSTANCE)
 ;+		(allowed-classes Menu)
 		(create-accessor read-write))
-	(multislot BebidaIngrediente
-		(type INSTANCE)
-;+		(allowed-classes Bebida)
-		(create-accessor read-write))
 	(single-slot NombrePlato
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot Bebida+Menu
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
 		(create-accessor read-write))
 	(multislot TipoPlato
 		(type SYMBOL)

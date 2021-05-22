@@ -1,4 +1,4 @@
-; Thu May 20 10:35:19 CEST 2021
+; Sat May 22 10:53:46 CEST 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -25,6 +25,7 @@
 
 ([SBCProject_Class100] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class41]
 		[SBCProject_Class40]
@@ -37,6 +38,7 @@
 
 ([SBCProject_Class10000] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class55]
 		[SBCProject_Class25]
@@ -57,6 +59,7 @@
 
 ([SBCProject_Class10002] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class51]
@@ -76,6 +79,7 @@
 
 ([SBCProject_Class10005] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class36]
 		[SBCProject_Class65]
@@ -94,6 +98,7 @@
 
 ([SBCProject_Class10007] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class52]
 		[SBCProject_Class37])
@@ -108,6 +113,7 @@
 
 ([SBCProject_Class10009] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class48])
 	(NombrePlato "Helado artesanal")
 	(OrdenPlato Postre)
@@ -120,6 +126,7 @@
 
 ([SBCProject_Class10011] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class54])
 	(NombrePlato "Crema catalana")
 	(OrdenPlato Postre)
@@ -132,6 +139,7 @@
 
 ([SBCProject_Class10013] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class57]
 		[SBCProject_Class23]
@@ -147,6 +155,7 @@
 
 ([SBCProject_Class10015] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class45]
 		[SBCProject_Class59]
@@ -162,6 +171,7 @@
 
 ([SBCProject_Class10018] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class22])
 	(NombrePlato "Bocadillos variados")
 	(OrdenPlato Segundo)
@@ -174,6 +184,7 @@
 
 ([SBCProject_Class10020] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class36]
 		[SBCProject_Class65]
@@ -190,6 +201,7 @@
 
 ([SBCProject_Class10022] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class61]
 		[SBCProject_Class37])
@@ -204,6 +216,7 @@
 
 ([SBCProject_Class10024] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class56])
 	(NombrePlato "Helado de tarrina")
 	(OrdenPlato Postre)
@@ -216,6 +229,7 @@
 
 ([SBCProject_Class10026] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class47])
 	(NombrePlato "Tiramisu")
 	(OrdenPlato Postre)
@@ -228,6 +242,7 @@
 
 ([SBCProject_Class10028] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class35])
 	(NombrePlato "Coulant")
 	(OrdenPlato Postre)
@@ -240,6 +255,7 @@
 
 ([SBCProject_Class10030] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class62])
 	(NombrePlato "Tarta de cafe")
 	(OrdenPlato Postre)
@@ -252,6 +268,7 @@
 
 ([SBCProject_Class10032] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class55])
 	(NombrePlato "Surtido de embutidos")
 	(OrdenPlato Primero Segundo)
@@ -264,6 +281,7 @@
 
 ([SBCProject_Class10034] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class10037])
 	(NombrePlato "Ostras")
 	(OrdenPlato Primero Segundo)
@@ -282,6 +300,7 @@
 
 ([SBCProject_Class10038] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class63]
 		[SBCProject_Class64])
@@ -305,6 +324,7 @@
 
 ([SBCProject_Class10043] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class65])
 	(NombrePlato "Bogabante")
 	(OrdenPlato Segundo)
@@ -317,6 +337,7 @@
 
 ([SBCProject_Class10045] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class22]
@@ -333,6 +354,7 @@
 
 ([SBCProject_Class10047] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class55]
 		[SBCProject_Class22]
@@ -348,6 +370,7 @@
 
 ([SBCProject_Class10049] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class51]
 		[SBCProject_Class28])
@@ -368,6 +391,7 @@
 
 ([SBCProject_Class10053] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class67])
 	(NombrePlato "Caracoles")
 	(OrdenPlato Segundo)
@@ -384,6 +408,7 @@
 
 ([SBCProject_Class103] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class22]
 		[SBCProject_Class42]
@@ -457,6 +482,7 @@
 
 ([SBCProject_Class20000] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class69])
 	(NombrePlato "Fricando")
 	(OrdenPlato Segundo)
@@ -469,6 +495,7 @@
 
 ([SBCProject_Class20002] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class66])
 	(NombrePlato "Brazo de gitano")
 	(OrdenPlato Postre)
@@ -481,6 +508,7 @@
 
 ([SBCProject_Class20004] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class68])
 	(NombrePlato "Bunuelos")
 	(OrdenPlato Postre)
@@ -493,6 +521,7 @@
 
 ([SBCProject_Class20006] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class71]
 		[SBCProject_Class21])
@@ -507,6 +536,7 @@
 
 ([SBCProject_Class20008] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class73]
 		[SBCProject_Class22])
@@ -521,6 +551,7 @@
 
 ([SBCProject_Class20010] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class22]
 		[SBCProject_Class76]
@@ -536,6 +567,7 @@
 
 ([SBCProject_Class20012] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class38]
@@ -551,6 +583,7 @@
 
 ([SBCProject_Class20013] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class72]
 		[SBCProject_Class23]
@@ -566,6 +599,7 @@
 
 ([SBCProject_Class20015] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class41]
 		[SBCProject_Class74]
@@ -587,6 +621,7 @@
 
 ([SBCProject_Class20019] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes [SBCProject_Class39])
 	(NombrePlato "Tarta tatin")
 	(OrdenPlato Postre)
@@ -930,6 +965,7 @@
 
 ([SBCProject_Class81] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class21]
 		[SBCProject_Class22])
@@ -944,6 +980,7 @@
 
 ([SBCProject_Class84] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class24])
@@ -958,6 +995,7 @@
 
 ([SBCProject_Class86] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class27]
 		[SBCProject_Class39])
@@ -972,6 +1010,7 @@
 
 ([SBCProject_Class88] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class28]
 		[SBCProject_Class29]
@@ -993,6 +1032,7 @@
 
 ([SBCProject_Class90] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class21]
 		[SBCProject_Class40]
@@ -1010,6 +1050,7 @@
 
 ([SBCProject_Class92] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class25]
 		[SBCProject_Class38]
@@ -1028,6 +1069,7 @@
 
 ([SBCProject_Class94] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class32]
 		[SBCProject_Class33]
@@ -1044,6 +1086,7 @@
 
 ([SBCProject_Class96] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class30]
 		[SBCProject_Class37])
@@ -1058,6 +1101,7 @@
 
 ([SBCProject_Class98] of  Plato
 
+	(Bebida+Menu [SBCProject_Class2])
 	(Ingredientes
 		[SBCProject_Class35]
 		[SBCProject_Class37])

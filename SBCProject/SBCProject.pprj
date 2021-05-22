@@ -1,4 +1,4 @@
-; Thu May 20 10:35:19 CEST 2021
+; Sat May 22 10:53:33 CEST 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 660")
@@ -20,14 +20,14 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[SBCProject_ProjectKB_Class19]
-		[SBCProject_ProjectKB_Class20]
-		[SBCProject_ProjectKB_Class21]
-		[SBCProject_ProjectKB_Class22]
-		[SBCProject_ProjectKB_Class23]
-		[SBCProject_ProjectKB_Class24]
-		[SBCProject_ProjectKB_Class25]
-		[SBCProject_ProjectKB_Class26]))
+		[SBCProject_ProjectKB_Class10060]
+		[SBCProject_ProjectKB_Class10061]
+		[SBCProject_ProjectKB_Class10062]
+		[SBCProject_ProjectKB_Class10063]
+		[SBCProject_ProjectKB_Class10064]
+		[SBCProject_ProjectKB_Class10065]
+		[SBCProject_ProjectKB_Class10066]
+		[SBCProject_ProjectKB_Class10067]))
 
 ([CLSES_TAB] of  Widget
 
@@ -71,6 +71,9 @@
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
+([KB_206486_Class3] of  Map
+)
+
 ([KB_255030_Class0] of  String
 
 	(name "factory_class_name")
@@ -79,9 +82,9 @@
 ([KB_255030_Class1] of  Map
 
 	(entries
-		[SBCProject_ProjectKB_Class27]
-		[SBCProject_ProjectKB_Class28]
-		[SBCProject_ProjectKB_Class29]))
+		[SBCProject_ProjectKB_Class10068]
+		[SBCProject_ProjectKB_Class10069]
+		[SBCProject_ProjectKB_Class10070]))
 
 ([KB_255030_Class10] of  Property_List
 )
@@ -508,9 +511,6 @@
 	(name "classes_file_name")
 	(string_value "SBCProject.pont"))
 
-([KB_881978_Class3] of  Map
-)
-
 ([LAYOUT_PROPERTIES] of  Property_List
 
 	(name "layout properties")
@@ -662,61 +662,61 @@
 	(property_list [KB_255030_Class98])
 	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
 
-([SBCProject_ProjectKB_Class19] of  String
+([SBCProject_ProjectKB_Class10060] of  String
 
 	(name "Cliente")
 	(string_value "DNI"))
 
-([SBCProject_ProjectKB_Class20] of  String
+([SBCProject_ProjectKB_Class10061] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([SBCProject_ProjectKB_Class21] of  String
+([SBCProject_ProjectKB_Class10062] of  String
 
 	(name "Plato")
 	(string_value "NombrePlato"))
 
-([SBCProject_ProjectKB_Class22] of  String
+([SBCProject_ProjectKB_Class10063] of  String
 
 	(name "Evento")
 	(string_value "NombreEvento"))
 
-([SBCProject_ProjectKB_Class23] of  String
+([SBCProject_ProjectKB_Class10064] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([SBCProject_ProjectKB_Class24] of  String
+([SBCProject_ProjectKB_Class10065] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([SBCProject_ProjectKB_Class25] of  String
+([SBCProject_ProjectKB_Class10066] of  String
 
 	(name "Ingrediente")
 	(string_value "NombreIngrediente"))
 
-([SBCProject_ProjectKB_Class26] of  String
+([SBCProject_ProjectKB_Class10067] of  String
 
 	(name "Bebida")
 	(string_value "NombreBebida"))
 
-([SBCProject_ProjectKB_Class27] of  Map_Entry
+([SBCProject_ProjectKB_Class10068] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([SBCProject_ProjectKB_Class28] of  Map_Entry
+([SBCProject_ProjectKB_Class10069] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([SBCProject_ProjectKB_Class29] of  Map_Entry
+([SBCProject_ProjectKB_Class10070] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
