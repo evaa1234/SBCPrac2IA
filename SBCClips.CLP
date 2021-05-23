@@ -2126,14 +2126,10 @@
 	(eq ?puntos 1)
 )
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;; HANDLERS PARA LAS ALERGIAS  !!!!!!!!!!!  ;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
-;                   ======================================================================
-;                   =====================     Handler Ingrediente     ====================
-;                   ======================================================================
+;;;------------------------------------------------------------------------------------------------------------------------------------------------------
+;;;----------  					HANDLER INGREDIENTE					 		---------- 				
+;;;-----------------------------------------------------------------------------------------------------------------------------------------
 
 (defmessage-handler Ingrediente es-ingrediente-temporal ()
 	(if (or (eq ?self:Temp Primavera) (eq ?self:Temp Verano) (eq ?self:Temp Otono) (eq ?self:Temp Invierno))
@@ -2235,7 +2231,6 @@
 				)
 	)
 
-	;Actualizamos puntuaciones de los segundos
 	(loop-for-count (?i 1 (length$ ?listaPlatosAbstractos)) do
 		(bind ?platoAbstracto (nth$ ?i ?listaPlatosAbstractos))
 		(if (send ?platoAbstracto es-segundo)
@@ -2246,8 +2241,6 @@
 				)
 		)
 	)
-
-	;Seleccionamos el segundo y el postre con puntuacion maxima
 	(loop-for-count (?i 1 (length$ ?listaPlatosAbstractos)) do
 		(bind ?platoAbstracto (nth$ ?i ?listaPlatosAbstractos))
 
@@ -2286,12 +2279,6 @@
 		(+ (send (nth$ ?indiceMaxSegundo ?listaPlatosAbstractos) get-Precio)
 		(send (nth$ ?indiceMaxPostre ?listaPlatosAbstractos) get-Precio))))
 )
-
-
-;                   ======================================================================
-;                   ==================       Handler Vino Abstracto     ==================
-;                   ======================================================================
-
 
 (defmessage-handler MAIN::VinoAbstracto imprimir-carta "Handler que imprime la informacion del vino
 	por la salida estandard"()
@@ -2408,9 +2395,7 @@
 	?candidato
 )
 
-(deffunction generar-menu "genera los menus" 
-	(?categoria ?subCatecoria ?numComensales ?numAlergicosFruta ?numAlergicosLactosa
-	 ?numAlergicosMarisco ?numAlergicosPescado ?numComensalesVino ?siQuiereVino ?alcohol ?numComensalesNinos)
+(deffunction generar-menu "genera los menus" (?categoria ?subCatecoria ?numComensales ?numAlergicosFruta ?numAlergicosLactosa ?numAlergicosMarisco ?numAlergicosPescado ?numComensalesVino ?siQuiereVino ?alcohol ?numComensalesNinos)
 	
 	(bind ?numGenteConRestriccion (+ ?numAlergicosFruta (+ ?numAlergicosLactosa (+ ?numAlergicosMarisco ?numAlergicosPescado))))
 	(bind ?menuGeneral (make-instance (gensym) of MenuAbstracto))
@@ -2719,6 +2704,7 @@
 
 	(format t "*|             Total                 :         %06.2f                     |*%n" ?total)
 	(printout t "*|                                                                            |*" crlf)
+
 )
 
  
@@ -3054,9 +3040,10 @@
   (focus abstraccion)
 )
 
-;                   ======================================================================
-;                   ======================  Modulo de abstraccion   ======================
-;                   ======================================================================
+;;;------------------------------------------------------------------------------------------------------------------------------------------------------
+;;;----------  					ABSTRACCION				 		---------- 				
+;;;-----------------------------------------------------------------------------------------------------------------------------------------
+
 
 (defrule abstraccion::abstraer-presupuesto "Regla que nos permite abstraer del presupuesto propuesto por
 	el usuario a unos valores abstractos"
@@ -3096,24 +3083,6 @@
 	(assert (abstraccion-comensales))
 )
 
-;;(defrule abstraccion::abstraer-temporada "Regla que nos permite abstraer el mes del evento propuesto por
-;;	el usuario a unos valores abstractos"
-;;
-;;	(not (abstraccion-temporada))
-;;	?e <- (ProblemaAbstracto)
-;;  (Entrada (mesEvento ?mesEvento))
-;;  =>
-;;  (if (and (>= ?mesEvento 4) (<= ?mesEvento 5))
-;;      then (modify ?e (temporada Primavera))
-;;      else (if (and (>= ?mesEvento 6) (< ?mesEvento 9))
-;;          then (modify ?e (temporada Verano))
-;;          else (if (and (>= ?mesEvento 10) (< ?mesEvento 11))
-;;              then (modify ?e (temporada Otono))
-;;              else (modify ?e (temporada Invierno))
-;;      )
-;;  )
-;;	(assert (abstraccion-temporada))
-;;)
 
 (defrule abstraccion::abstraccion-completada "Regla que comprueba que todas las preguntas han sido respondidas"
 	(abstraccion-comensales)
@@ -3122,9 +3091,10 @@
  	(focus solucionConcreta)
 )
 
-;                   ======================================================================
-;                   ===================   Modulo de solucion concreta   ==================
-;                   ======================================================================
+;;;------------------------------------------------------------------------------------------------------------------------------------------------------
+;;;----------  					SOLUCION CONCRETA				 		---------- 				
+;;;-----------------------------------------------------------------------------------------------------------------------------------------
+
 
 (defrule solucionConcreta::calcular-puntuaciones "Regla que calcula las puntuaciones de los platos"
 	(initial-fact)
